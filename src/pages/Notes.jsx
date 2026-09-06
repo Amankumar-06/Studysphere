@@ -16,7 +16,7 @@ function Notes() {
     try {
       setLoading(true)
 
-      const res = await fetch("http://localhost:5000/api/notes", {
+      const res = await fetch("https://studysphere-5i7u.onrender.com/api/notes", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -53,8 +53,8 @@ function Notes() {
 
     try {
       const url = editingId
-        ? `http://localhost:5000/api/notes/${editingId}`
-        : "http://localhost:5000/api/notes"
+        ? `https://studysphere-5i7u.onrender.com/api/notes/${editingId}`
+        : "https://studysphere-5i7u.onrender.com/api/notes"
 
       const method = editingId ? "PUT" : "POST"
 
@@ -106,7 +106,7 @@ function Notes() {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/notes/${id}`,
+        `https://studysphere-5i7u.onrender.com/api/notes/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -129,7 +129,7 @@ function Notes() {
   const toggleImportant = async (note) => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/notes/${note._id}`,
+        `https://studysphere-5i7u.onrender.com/api/notes/${note._id}`,
         {
           method: "PUT",
           headers: {

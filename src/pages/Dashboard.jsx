@@ -16,12 +16,12 @@ function Dashboard() {
       setLoading(true)
 
       const [subjectsRes, tasksRes] = await Promise.all([
-        fetch("http://localhost:5000/api/subjects", {
+        fetch("https://studysphere-5i7u.onrender.com/api/subjects", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         }),
-        fetch("http://localhost:5000/api/tasks", {
+        fetch("https://studysphere-5i7u.onrender.com/api/tasks", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

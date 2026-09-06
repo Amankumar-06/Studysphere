@@ -14,7 +14,7 @@ function QuizResult() {
         const token = localStorage.getItem("token")
 
         const response = await fetch(
-          `http://localhost:5000/api/quiz-results/${id}`,
+          `https://studysphere-5i7u.onrender.com/api/quiz-results/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -40,10 +40,10 @@ function Progress() {
         quizRes,
         weakTopicsRes,
       ] = await Promise.all([
-        fetch("http://localhost:5000/api/subjects", { headers }),
-        fetch("http://localhost:5000/api/tasks", { headers }),
-        fetch("http://localhost:5000/api/quiz-results", { headers }),
-        fetch("http://localhost:5000/api/weak-topics", { headers }),
+        fetch("https://studysphere-5i7u.onrender.com/api/subjects", { headers }),
+        fetch("https://studysphere-5i7u.onrender.com/api/tasks", { headers }),
+        fetch("https://studysphere-5i7u.onrender.com/api/quiz-results", { headers }),
+        fetch("https://studysphere-5i7u.onrender.com/api/weak-topics", { headers }),
       ])
 
       const subjectsData = await subjectsRes.json()

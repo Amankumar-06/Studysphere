@@ -15,7 +15,7 @@ function StudentDetails() {
       setLoading(true)
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/${id}/details`,
+        `https://studysphere-5i7u.onrender.com/api/admin/users/${id}/details`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

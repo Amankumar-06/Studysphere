@@ -18,7 +18,7 @@ function Notifications() {
   const fetchTasks = async () => {
     try {
       const res = await fetch(
-        "http://localhost:5000/api/tasks",
+        "https://studysphere-5i7u.onrender.com/api/tasks",
         {
           headers: {
             Authorization: `Bearer ${token}`,

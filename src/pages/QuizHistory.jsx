@@ -17,7 +17,7 @@ function QuizHistory() {
         setError("")
 
         const response = await fetch(
-          "http://localhost:5000/api/quiz-results",
+          "https://studysphere-5i7u.onrender.com/api/quiz-results",
           {
             headers: {
               Authorization: `Bearer ${token}`,

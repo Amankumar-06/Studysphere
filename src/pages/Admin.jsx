@@ -46,9 +46,9 @@ function Admin() {
 
       const [statsResponse, usersResponse, activityResponse] =
         await Promise.all([
-          fetch("http://localhost:5000/api/admin/stats", { headers }),
-          fetch("http://localhost:5000/api/admin/users", { headers }),
-          fetch("http://localhost:5000/api/admin/student-activity", {
+          fetch("https://studysphere-5i7u.onrender.com/api/admin/stats", { headers }),
+          fetch("https://studysphere-5i7u.onrender.com/api/admin/users", { headers }),
+          fetch("https://studysphere-5i7u.onrender.com/api/admin/student-activity", {
             headers,
           }),
         ])
@@ -105,7 +105,7 @@ function Admin() {
       setUpdatingRole(userId)
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/${userId}/role`,
+        `https://studysphere-5i7u.onrender.com/api/admin/users/${userId}/role`,
         {
           method: "PUT",
           headers: {
@@ -162,7 +162,7 @@ function Admin() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/${userId}`,
+        `https://studysphere-5i7u.onrender.com/api/admin/users/${userId}`,
         {
           method: "DELETE",
           headers: {

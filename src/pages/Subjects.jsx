@@ -13,7 +13,7 @@ function Subjects() {
     try {
       setLoading(true)
 
-      const res = await fetch("http://localhost:5000/api/subjects", {
+      const res = await fetch("https://studysphere-5i7u.onrender.com/api/subjects", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -42,8 +42,8 @@ function Subjects() {
 
     try {
       const url = editingId
-        ? `http://localhost:5000/api/subjects/${editingId}`
-        : "http://localhost:5000/api/subjects"
+        ? `https://studysphere-5i7u.onrender.com/api/subjects/${editingId}`
+        : "https://studysphere-5i7u.onrender.com/api/subjects"
 
       const method = editingId ? "PUT" : "POST"
 
@@ -94,7 +94,7 @@ function Subjects() {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/subjects/${id}`,
+        `https://studysphere-5i7u.onrender.com/api/subjects/${id}`,
         {
           method: "DELETE",
           headers: {
