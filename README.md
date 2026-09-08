@@ -1,16 +1,80 @@
-# React + Vite
+# StudySphere 🎓
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+StudySphere is a smart student study management system designed to help students organize their studies, track academic progress, practice quizzes, and improve their learning performance.
 
-Currently, two official plugins are available:
+## 🌐 Live Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Frontend: https://YOUR-NETLIFY-URL.netlify.app
 
-## React Compiler
+Backend: https://studysphere-5i7u.onrender.com
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔐 Student Registration & Login
+- 🏠 Smart Student Dashboard
+- 📚 Subject Management
+- 📅 Study Planner
+- 📝 Digital Notes Management
+- 🧠 Normal Quiz System
+- 🤖 AI Quiz Generator
+- 📊 Progress & Performance Analysis
+- 🎯 Weak Topic Detection
+- 📜 Quiz History
+- ⏱️ Pomodoro Study Timer
+- 🔔 Task Notifications
+- 👨‍💼 Admin Panel
+- 👤 Student Profile & Activity Tracking
+- 📈 Charts and Performance Statistics
+- 🔒 JWT Authentication
+- ☁️ MongoDB Cloud Database
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technology Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- React Router
+- Recharts
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcryptjs
+
+### AI
+- Google Gemini API
+
+### Deployment
+- Netlify
+- Render
+- MongoDB Atlas
+
+## 📂 Project Structure
+
+```text
+Studysphere/
+│
+├── studysphere/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── server/
+│   ├── config/
+│   ├── models/
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+└── README.md
